@@ -5,16 +5,38 @@
   <title>About Us | HasanEnergy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 40px;
+    }
+    .about-box {
+      background-color: #071f33;
+      padding: 30px;
+      border-left: 5px solid #8b0000;
+    }
+    .about-box h3 {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+    @media (max-width: 768px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  <div class="container">
+<header class="header">
+  <div class="container header-flex">
     <strong>HASANENERGY</strong>
-    <nav>
+    <nav class="nav">
       <a href="index.html">Home</a>
-      <a href="about.html">About</a>
+      <a href="about.html">About Us</a>
       <a href="services.html">Services</a>
       <a href="get-quote.html">Get a Quote</a>
       <a href="contact.html">Contact</a>
@@ -23,43 +45,29 @@
   </div>
 </header>
 
-<main>
-  <section>
-    <div class="container">
-      <h1>About HasanEnergy</h1>
+<section class="hero">
+  <h1>About Us</h1>
+  <p>Learn more about HasanEnergy</p>
+</section>
 
-      <p>
-        HasanEnergy started its commercial activities in March 2018,
-        based on over 20 years of sector experience and technical expertise.
-      </p>
-
-      <p>
-        Our company provides services in LPG storage systems, LPG cylinder
-        filling and transportation equipment, pressure vessels, machinery,
-        petroleum, cryogenic and various industrial systems.
-      </p>
-
-      <p>
-        We offer project development, manufacturing, installation,
-        commissioning, training and after-sales technical support,
-        always standing by our customers.
-      </p>
-
-      <p>
-        With our experience, strong partnerships and increasing customer
-        satisfaction, HasanEnergy continues to be a reliable solution partner
-        in the energy sector.
-      </p>
-    </div>
-  </section>
-</main>
-
-<footer>
+<section class="services">
   <div class="container">
-    © 2025 HasanEnergy. All rights reserved.
+    <div class="about-grid">
+      <div class="about-box">
+        <h3>Our Story</h3>
+        <p>HasanEnergy was founded in March 2018, combining over 20 years of experience in the sector. We provide innovative and reliable solutions in the LPG and energy systems field.</p>
+      </div>
+      <div class="about-box">
+        <h3>Our Expertise</h3>
+        <p>We specialize in LPG storage, cylinder filling, transportation, and various industrial systems, working with partners to provide high-quality and safe solutions.</p>
+      </div>
+    </div>
   </div>
+</section>
+
+<footer class="footer">
+  <p>© 2025 HasanEnergy. All rights reserved.</p>
 </footer>
 
 </body>
 </html>
-
