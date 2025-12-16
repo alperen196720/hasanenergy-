@@ -4,11 +4,10 @@
    ============================= */
 
 :root {
-  --blue: #0b3c5d;
-  --red: #c62828;
-  --green: #2e7d32;
-  --light: #f5f7fa;
-  --dark: #1a1a1a;
+  --blue: #0a2f4f;
+  --red: #8b0000;
+  --green: #1b5e20;
+  --darkblue: #071f33;
 }
 
 * {
@@ -19,8 +18,8 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: var(--dark);
-  background-color: var(--light);
+  color: #eaeaea;
+  background-color: var(--darkblue);
   line-height: 1.6;
 }
 
@@ -99,6 +98,7 @@ body {
 /* SERVICES */
 .services {
   padding: 70px 0;
+  background: var(--blue);
 }
 
 .services h2 {
@@ -114,10 +114,10 @@ body {
 }
 
 .service-box {
-  background: #fff;
+  background: var(--darkblue);
   padding: 30px;
-  border-top: 5px solid var(--green);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-top: 6px solid var(--red);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
 }
 
 .service-box h3 {
@@ -127,7 +127,7 @@ body {
 
 /* WHY US */
 .why {
-  background: #fff;
+  background: var(--darkblue);
   padding: 60px 0;
 }
 
@@ -150,7 +150,7 @@ body {
 
 /* CTA */
 .cta {
-  background: var(--green);
+  background: linear-gradient(135deg, var(--red), var(--green));
   color: #fff;
   text-align: center;
   padding: 60px 20px;
