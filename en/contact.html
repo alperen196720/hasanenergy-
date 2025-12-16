@@ -5,16 +5,42 @@
   <title>Contact | HasanEnergy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .contact-box {
+      background-color: #071f33;
+      padding: 30px;
+      border-left: 5px solid #8b0000;
+    }
+
+    .contact-box h3 {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  <div class="container">
+<header class="header">
+  <div class="container header-flex">
     <strong>HASANENERGY</strong>
-    <nav>
+    <nav class="nav">
       <a href="index.html">Home</a>
-      <a href="about.html">About</a>
+      <a href="about.html">About Us</a>
       <a href="services.html">Services</a>
       <a href="get-quote.html">Get a Quote</a>
       <a href="contact.html">Contact</a>
@@ -23,46 +49,62 @@
   </div>
 </header>
 
-<main>
-  <section>
-    <div class="container">
-      <h1>Contact Us</h1>
+<section class="hero">
+  <h1>Contact</h1>
+  <p>Get in touch with HasanEnergy</p>
+</section>
 
-      <p><strong>Company:</strong> HasanEnergy</p>
+<section class="services">
+  <div class="container">
 
-      <p>
-        <strong>Address:</strong><br>
-        Şeyhli Mahallesi, Kürsü Sokak No:3B<br>
-        Pendik / Istanbul / Türkiye
-      </p>
+    <div class="contact-grid">
 
-      <p>
-        <strong>Phone:</strong><br>
+      <!-- LEFT -->
+      <div class="contact-box">
+        <h3>Contact Details</h3>
+
+        <p><strong>Address</strong><br>
+        Şeyhli Neighborhood, Kürsü Street No: 3B<br>
+        Pendik / Istanbul / Turkey</p>
+
+        <p><strong>Phone</strong><br>
         +90 216 969 99 60<br>
         +90 544 809 06 95<br>
-        +90 542 620 86 95
-      </p>
+        +90 542 620 86 95</p>
 
-      <p>
-        <strong>Email:</strong><br>
-        <a href="mailto:alperen@hasanenergy.com.tr">alperen@hasanenergy.com.tr</a><br>
-        <a href="mailto:hasan@hasanenergy.com.tr">hasan@hasanenergy.com.tr</a><br>
-        <a href="mailto:info@hasanenergy.com.tr">info@hasanenergy.com.tr</a>
-      </p>
+        <p><strong>Email</strong><br>
+        alperen@hasanenergy.com.tr<br>
+        hasan@hasanenergy.com.tr<br>
+        info@hasanenergy.com.tr</p>
+      </div>
 
-      <p>
-        <strong>Working Hours:</strong><br>
-        Weekdays: 09:00 – 18:00<br>
-        Weekend: 09:00 – 12:00
-      </p>
+      <!-- RIGHT -->
+      <div class="contact-box">
+        <h3>Working Hours</h3>
+
+        <p>
+          Monday – Friday<br>
+          09:00 – 18:00
+        </p>
+
+        <p>
+          Saturday<br>
+          09:00 – 12:00
+        </p>
+
+        <p>
+          For project inquiries, quotations and technical support,
+          please contact us during working hours.
+        </p>
+      </div>
+
     </div>
-  </section>
-</main>
 
-<footer>
-  <div class="container">
-    © 2025 HasanEnergy. All rights reserved.
   </div>
+</section>
+
+<footer class="footer">
+  <p>© 2025 HasanEnergy. All rights reserved.</p>
 </footer>
 
 </body>
