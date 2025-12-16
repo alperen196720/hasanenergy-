@@ -1,166 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Get a Quote | HasanEnergy</title>
+<meta charset="UTF-8">
+<title>Get a Quote | HasanEnergy</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #0a2f4f;
-      color: #ffffff;
-    }
-
-    .header {
-      background-color: #071f33;
-      padding: 15px 0;
-    }
-
-    .container {
-      width: 90%;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .header-flex {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .nav a {
-      color: #ffffff;
-      text-decoration: none;
-      margin-left: 20px;
-      font-weight: bold;
-    }
-
-    .nav a:hover {
-      color: #8b0000;
-    }
-
-    .page-title {
-      padding: 60px 0;
-      background: linear-gradient(135deg, #071f33, #0a2f4f);
-      text-align: center;
-    }
-
-    .form-section {
-      padding: 60px 0;
-      background-color: #071f33;
-    }
-
-    form {
-      background-color: #0a2f4f;
-      padding: 30px;
-      border-left: 6px solid #8b0000;
-    }
-
-    label {
-      display: block;
-      margin-top: 15px;
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
-
-    input, textarea, select {
-      width: 100%;
-      padding: 10px;
-      border: none;
-      outline: none;
-      font-size: 15px;
-    }
-
-    textarea {
-      resize: vertical;
-      min-height: 120px;
-    }
-
-    button {
-      margin-top: 20px;
-      padding: 12px 25px;
-      background-color: #8b0000;
-      color: #ffffff;
-      border: none;
-      font-size: 16px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    button:hover {
-      background-color: #b00000;
-    }
-
-    .footer {
-      background-color: #071f33;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-    }
-  </style>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0a2f4f;
+  color: #fff;
+}
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 80px auto;
+}
+input, textarea, button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+}
+button {
+  background-color: #8b0000;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+</style>
 </head>
 <body>
 
-<header class="header">
-  <div class="container header-flex">
-    <strong>HASANENERGY | LPG & Energy Systems</strong>
-    <nav class="nav">
-      <a href="/hasanenergy-/en/index.html">Home</a>
-      <a href="/hasanenergy-/en/about.html">About Us</a>
-      <a href="/hasanenergy-/en/services.html">Services</a>
-      <a href="/hasanenergy-/en/get-quote.html">Get a Quote</a>
-      <a href="/hasanenergy-/en/contact.html">Contact</a>
-      <a href="/hasanenergy-/teklif-al.html">TR</a>
-    </nav>
-  </div>
-</header>
+<div class="container">
+<h1>Get a Quote</h1>
 
-<section class="page-title">
-  <h1>Get a Quote</h1>
-  <p>Please fill out the form below to contact us</p>
-</section>
+<form action="https://formsubmit.co/info@hasanenergy.com.tr" method="POST">
+  <input type="text" name="name" placeholder="Full Name" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <input type="text" name="subject" placeholder="Subject">
+  <textarea name="message" placeholder="Your message" rows="5"></textarea>
 
-<section class="form-section">
-  <div class="container">
-
-    <form action="mailto:info@hasanenergy.com.tr" method="post" enctype="text/plain">
-
-      <label>Full Name</label>
-      <input type="text" name="Full Name" required>
-
-      <label>Company Name</label>
-      <input type="text" name="Company">
-
-      <label>Email</label>
-      <input type="email" name="Email" required>
-
-      <label>Phone</label>
-      <input type="tel" name="Phone">
-
-      <label>Service Type</label>
-      <select name="Service">
-        <option>LPG Tankers</option>
-        <option>Filling Systems</option>
-        <option>Fire Fighting Systems</option>
-        <option>Equipment & Accessories</option>
-        <option>Other</option>
-      </select>
-
-      <label>Your Request</label>
-      <textarea name="Message"></textarea>
-
-      <button type="submit">Send Request</button>
-
-    </form>
-
-  </div>
-</section>
-
-<footer class="footer">
-  <p>© 2025 HasanEnergy. All rights reserved.</p>
-</footer>
+  <input type="hidden" name="_captcha" value="false">
+  <button type="submit">Send</button>
+</form>
+</div>
 
 </body>
 </html>
