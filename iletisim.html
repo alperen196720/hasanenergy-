@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>İletişim | HasanEnergy</title>
+
+  <style>
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0a2f4f;
+    color: #ffffff;
+  }
+
+  .header {
+    background-color: #071f33;
+    padding: 15px 0;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+  }
+
+  .nav a:hover {
+    color: #8b0000;
+  }
+
+  .page-title {
+    padding: 70px 0;
+    background: linear-gradient(135deg, #071f33, #0a2f4f);
+    text-align: center;
+  }
+
+  .page-title h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+  }
+
+  .contact {
+    padding: 70px 0;
+    background-color: #071f33;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+
+  .contact-box {
+    background-color: #0a2f4f;
+    padding: 30px;
+    border-left: 6px solid #8b0000;
+  }
+
+  .contact-box h2 {
+    margin-bottom: 15px;
+  }
+
+  .contact-box p {
+    margin-bottom: 10px;
+  }
+
+  .map {
+    margin-top: 40px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
+  }
+
+  .footer {
+    background-color: #071f33;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+  }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-flex">
+      <strong>HASANENERGY</strong>
+      <nav class="nav">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="hizmetler.html">Hizmetler</a>
+        <a href="#">Hakkımızda</a>
+        <a href="iletisim.html">İletişim</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- TITLE -->
+  <section class="page-title">
+    <h1>İletişim</h1>
+    <p>Bizimle iletişime geçin</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-box">
+          <h2>Adres</h2>
+          <p>HasanEnergy</p>
+          <p>Türkiye</p>
+        </div>
+
+        <div class="contact-box">
+          <h2>İletişim Bilgileri</h2>
+          <p>Telefon: +90 5XX XXX XX XX</p>
+          <p>E-posta: info@hasanenergy.com</p>
+        </div>
+
+        <div class="contact-box">
+          <h2>Çalışma Saatleri</h2>
+          <p>Pazartesi - Cuma</p>
+          <p>09:00 - 18:00</p>
+        </div>
+
+      </div>
+
+      <div class="map">
+        <iframe src="https://www.google.com/maps?q=Turkey&output=embed"></iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 HasanEnergy. Tüm hakları saklıdır.</p>
+  </footer>
+
+</body>
+</html>
