@@ -1,57 +1,50 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Teklif Al | Hasan Enerji</title>
+<meta charset="UTF-8">
+<title>Teklif Al | Hasan Enerji</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #0a2f4f;
-      color: #ffffff;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0a2f4f;
+  color: #fff;
+}
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 80px auto;
+}
+input, textarea, button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+}
+button {
+  background-color: #8b0000;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
 
-    .header {
-      background-color: #071f33;
-      padding: 15px 0;
-    }
+<div class="container">
+<h1>Teklif Al</h1>
 
-    .container {
-      width: 90%;
-      max-width: 1000px;
-      margin: auto;
-    }
+<form action="https://formsubmit.co/info@hasanenergy.com.tr" method="POST">
+  <input type="text" name="name" placeholder="Ad Soyad" required>
+  <input type="email" name="email" placeholder="E-Posta" required>
+  <input type="text" name="subject" placeholder="Konu">
+  <textarea name="message" placeholder="Mesajınız" rows="5"></textarea>
 
-    .header-flex {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+  <input type="hidden" name="_captcha" value="false">
+  <button type="submit">Gönder</button>
+</form>
+</div>
 
-    .nav a {
-      color: #ffffff;
-      text-decoration: none;
-      margin-left: 20px;
-      font-weight: bold;
-    }
-
-    .nav a:hover {
-      color: #8b0000;
-    }
-
-    .page-title {
-      padding: 60px 0;
-      background: linear-gradient(135deg, #071f33, #0a2f4f);
-      text-align: center;
-    }
-
-    .form-section {
-      padding: 60px 0;
-      background-color: #071f33;
-    }
-
-    form {
-      background-color: #0a2f4f;
-      padding:
+</body>
+</html>
