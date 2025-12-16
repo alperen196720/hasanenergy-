@@ -5,16 +5,38 @@
   <title>Services | HasanEnergy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 40px;
+    }
+    .service-box {
+      background-color: #071f33;
+      padding: 30px;
+      border-left: 5px solid #8b0000;
+    }
+    .service-box h3 {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+    @media (max-width: 768px) {
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  <div class="container">
+<header class="header">
+  <div class="container header-flex">
     <strong>HASANENERGY</strong>
-    <nav>
+    <nav class="nav">
       <a href="index.html">Home</a>
-      <a href="about.html">About</a>
+      <a href="about.html">About Us</a>
       <a href="services.html">Services</a>
       <a href="get-quote.html">Get a Quote</a>
       <a href="contact.html">Contact</a>
@@ -23,30 +45,36 @@
   </div>
 </header>
 
-<main>
-  <section>
-    <div class="container">
-      <h1>Our Services</h1>
+<section class="hero">
+  <h1>Our Services</h1>
+  <p>Explore the services we offer</p>
+</section>
 
-      <p><strong>LPG Tankers</strong><br>
-      Design and manufacturing of LPG tankers.</p>
-
-      <p><strong>Filling Systems</strong><br>
-      LPG filling, storage and transfer systems.</p>
-
-      <p><strong>Fire Fighting Systems</strong><br>
-      Industrial fire safety solutions.</p>
-
-      <p><strong>Equipment & Accessories</strong><br>
-      Valves, pumps and technical equipment.</p>
-    </div>
-  </section>
-</main>
-
-<footer>
+<section class="services">
   <div class="container">
-    © 2025 HasanEnergy. All rights reserved.
+    <div class="services-grid">
+      <div class="service-box">
+        <h3>LPG Tankers</h3>
+        <p>Design and manufacturing of LPG tankers according to international standards.</p>
+      </div>
+      <div class="service-box">
+        <h3>Filling Systems</h3>
+        <p>High-quality LPG filling, storage, and transfer systems for safe operations.</p>
+      </div>
+      <div class="service-box">
+        <h3>Fire Fighting Systems</h3>
+        <p>Comprehensive fire suppression solutions for industrial and LPG facilities.</p>
+      </div>
+      <div class="service-box">
+        <h3>Equipment & Accessories</h3>
+        <p>Supply of valves, pumps, and essential equipment for LPG and energy systems.</p>
+      </div>
+    </div>
   </div>
+</section>
+
+<footer class="footer">
+  <p>© 2025 HasanEnergy. All rights reserved.</p>
 </footer>
 
 </body>
