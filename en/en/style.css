@@ -1,70 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><header>
-  <div class="container header-flex">
-    <div class="logo">HASANENERGY</div>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="services.html">Services</a>
-      <a href="get-quote.html">Get a Quote</a>
-      <a href="contact.html">Contact</a>
-      <a href="../index.html">TR</a>
-    </nav>
-  </div>
-</header>
+/* ========== Ortak İngilizce CSS ========== */
 
-<meta charset="UTF-8">
-<title>Services | HasanEnergy</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0a2f4f;
+  color: #fff;
+}
 
-<body>
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
 
-<header>
-<div class="container">
-<strong>HASANENERGY</strong>
-<nav class="nav">
-<a href="index.html">Home</a>
-<a href="about.html">About Us</a>
-<a href="services.html">Services</a>
-<a href="get-quote.html">Get a Quote</a>
-<a href="contact.html">Contact</a>
-<a href="../index.html">TR</a>
-</nav>
-</div>
-</header>
+header {
+  background: #071f33;
+  padding: 15px 0;
+}
 
-<section class="section">
-<div class="container">
-<h1>Our Services</h1>
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-<div class="box">
-<h2>LPG Tankers</h2>
-<p>Design, manufacturing and commissioning services.</p>
-</div>
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
 
-<div class="box">
-<h2>Tank Filling Systems</h2>
-<p>Safe and efficient LPG filling solutions.</p>
-</div>
+header nav a:hover {
+  color: #c40000;
+}
 
-<div class="box">
-<h2>Fire Fighting Systems</h2>
-<p>Industrial fire safety and suppression systems.</p>
-</div>
+.hero {
+  text-align: center;
+  padding: 80px 0;
+  background: linear-gradient(135deg, #071f33, #0a2f4f);
+}
 
-<div class="box">
-<h2>Equipment & Accessories</h2>
-<p>Valves, pumps and technical components.</p>
-</div>
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
 
-</div>
-</section>
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
 
-<footer>
-© 2025 HasanEnergy. All rights reserved.
-</footer>
+.services-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
 
-</body>
-</html>
+.service-box {
+  background: #0a2f4f;
+  padding: 20px;
+  border-left: 5px solid #c40000;
+}
+
+footer {
+  background: #071f33;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
