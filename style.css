@@ -52,7 +52,7 @@ body {
       rgba(7, 31, 51, 0.85),
       rgba(7, 31, 51, 0.85)
     ),
-    url("images/hero.jpg") center/cover no-repeat;
+   url("./images/hero.jpg") center/cover no-repeat;
 }
 
 /* SERVICES */
