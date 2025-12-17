@@ -69,3 +69,13 @@ footer {
   padding: 20px;
   font-size: 14px;
 }
+.hero-bg {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background:
+    linear-gradient(rgba(7,31,51,0.85), rgba(7,31,51,0.85)),
+    url("images/hero.jpg") center/cover no-repeat;
+}
