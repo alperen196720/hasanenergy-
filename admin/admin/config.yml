@@ -1,0 +1,18 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "tr/images"
+public_folder: "/tr/images"
+
+collections:
+  - name: "pages"
+    label: "Sayfalar"
+    files:
+      - label: "Ana Sayfa"
+        name: "home"
+        file: "content/home.md"
+        fields:
+          - { label: "Baslik", name: "title", widget: "string" }
+          - { label: "Aciklama", name: "description", widget: "text" }
+          - { label: "Hero Resim", name: "hero", widget: "image" }
